@@ -397,7 +397,16 @@ function Index() {
             Acesso às aulas online, conteúdo prático e uma trilha pensada para quem quer sair do improviso e entender o serviço de verdade.
           </p>
 
-          <div className="mx-auto mt-10 max-w-xl rounded-[2rem] border border-white/10 bg-[#0b111a] p-6 text-left shadow-2xl sm:p-8">
+          <div className="mx-auto mt-10 grid max-w-5xl gap-8 lg:grid-cols-[1.05fr_.95fr] lg:items-center"> 
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[#0b111a] p-3 shadow-2xl">
+              <div className="absolute -inset-10 bg-[#138cff]/10 blur-3xl" />
+              <img
+                src="/lavajato/mockup-curso.webp"
+                alt="Mockup do Curso Lavajato do Diogo"
+                className="relative w-full rounded-[1.5rem] object-cover"
+              />
+            </div>
+            <div className="rounded-[2rem] border border-white/10 bg-[#0b111a] p-6 text-left shadow-2xl sm:p-8">
             <div className="mb-6 flex items-center justify-between gap-4 border-b border-white/10 pb-6">
               <div>
                 <p className="text-sm font-bold text-white/45">Formação online</p>
@@ -434,6 +443,7 @@ function Index() {
             <p className="mt-4 text-center text-xs text-white/35">
               Botão temporário — depois conectamos ao seu checkout.
             </p>
+            </div>
           </div>
         </div>
       </section>
