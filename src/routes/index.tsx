@@ -122,15 +122,13 @@ function Index() {
                 Veja na prática como organizar a lavagem, escolher produtos, fazer diluições, caprichar no acabamento, cobrar pelo serviço e começar mesmo com uma estrutura simples.
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-3 text-sm text-white/80">
-                {["Aulas práticas", "Do zero", "Acesso online", "Certificado"].map((item) => (
-                  <span key={item} className="inline-flex items-center gap-2 rounded-full bg-white/8 px-4 py-2">
-                    <Check className="size-4 text-[#2aa3ff]" />
-                    {item}
-                  </span>
-                ))}
+              <div className="mt-8 max-w-2xl overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[.03] p-2 shadow-2xl">
+                <img
+                  src="/lavajato/mockup-curso.webp"
+                  alt="Mockup do Curso Lavajato do Diogo"
+                  className="w-full rounded-[1.35rem] object-cover"
+                />
               </div>
-
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="#oferta"
@@ -138,13 +136,6 @@ function Index() {
                 >
                   QUERO APRENDER COM O DIOGO
                   <ArrowRight className="size-5" />
-                </a>
-                <a
-                  href="#resultados"
-                  className="inline-flex min-h-14 items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-7 text-base font-bold backdrop-blur transition hover:bg-white/10"
-                >
-                  <Play className="size-5 fill-current" />
-                  Ver o que você vai aprender
                 </a>
               </div>
             </div>
