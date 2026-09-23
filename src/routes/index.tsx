@@ -37,28 +37,33 @@ export const Route = createFileRoute("/")({
 const showcase = [
   {
     title: "Higienização interna",
-    subtitle: "Limpeza interna com mais cuidado, acabamento e percepção de valor.",
-    image: "/lavajato/higienizacao-interna.webp",
+    subtitle: "Interior limpo, organizado e com acabamento que valoriza o serviço.",
+    image: "/interior.jpg",
   },
   {
-    title: "Geral detalhada",
-    subtitle: "Uma lavagem mais completa, com atenção aos pontos que fazem diferença na entrega.",
-    image: "/lavajato/geral-detalhada.webp",
+    title: "Limpeza de chassi / parte inferior",
+    subtitle: "Antes e depois mostrando cuidado com áreas que muita gente ignora.",
+    image: "/baixo-carro.jpg",
   },
   {
     title: "Lavagem de motor",
-    subtitle: "Cuidados, aplicação e sequência para executar o processo com mais segurança.",
-    image: "/lavajato/lavagem-motor.webp",
+    subtitle: "Resultado real no cofre do motor, com limpeza e acabamento mais profissional.",
+    image: "/motor.jpg",
   },
   {
-    title: "Vitrificação",
-    subtitle: "Um serviço que agrega valor e melhora a apresentação e proteção do veículo.",
-    image: "/lavajato/vitrificacao.webp",
+    title: "Higienização de banco",
+    subtitle: "Antes e depois no tecido, removendo sujeira e melhorando o aspecto.",
+    image: "/banco.jpg",
   },
   {
-    title: "Produto e diluição",
-    subtitle: "O que usar, como usar e como diluir corretamente para evitar desperdício.",
-    image: "/lavajato/produto-diluicao.webp",
+    title: "Acabamento final",
+    subtitle: "Brilho e apresentação que chamam atenção logo na entrega.",
+    image: "/fusca.jpeg",
+  },
+  {
+    title: "Lavagem com espuma",
+    subtitle: "Processo visual forte e profissional que valoriza a experiência do cliente.",
+    image: "/espuma.jpeg",
   },
 ];
 
@@ -159,7 +164,7 @@ function Index() {
                 Veja alguns dos serviços que você vai aprender.
               </h2>
               <p className="mt-4 text-white/55">
-                Higienização, lavagem detalhada, motor, vitrificação e uso correto dos produtos.
+                Resultados reais do Lavajato do Diogo: interior, chassi, motor, bancos, acabamento e lavagem com espuma.
               </p>
             </div>
 
