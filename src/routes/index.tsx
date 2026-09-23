@@ -124,7 +124,7 @@ function Index() {
 
               <div className="mt-8 max-w-2xl overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[.03] p-2 shadow-2xl">
                 <img
-                  src="/lavajato/mockup-curso.png"
+                  src="/lavajato/mockup-curso.webp"
                   alt="Mockup do Curso Lavajato do Diogo"
                   className="w-full rounded-[1.35rem] object-cover"
                 />
@@ -392,7 +392,7 @@ function Index() {
             <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[#0b111a] p-3 shadow-2xl">
               <div className="absolute -inset-10 bg-[#138cff]/10 blur-3xl" />
               <img
-                src="/lavajato/mockup-curso.png"
+                src="/lavajato/mockup-curso.webp"
                 alt="Mockup do Curso Lavajato do Diogo"
                 className="relative w-full rounded-[1.5rem] object-cover"
               />
