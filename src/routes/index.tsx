@@ -52,6 +52,12 @@ const showcase = [
   },
 ];
 
+const featureItems = [
+  { icon: Wrench, title: "Equipamento", desc: "Entenda o que é realmente útil para começar." },
+  { icon: Droplets, title: "Processo", desc: "Tenha uma sequência clara do início ao acabamento." },
+  { icon: Gauge, title: "Preço", desc: "Aprenda a pensar em custo, tempo e valor percebido." },
+];
+
 const modules = [
   ["01", "Começando do zero", "O básico para iniciar com estrutura simples e sem comprar coisa desnecessária."],
   ["02", "Produtos e diluições", "Como entender função, uso e diluição para evitar desperdício e retrabalho."],
@@ -325,18 +331,14 @@ function Index() {
             </p>
 
             <div className="mt-8 grid gap-4">
-              {[
-                [Wrench, "Equipamento", "Entenda o que é realmente útil para começar."],
-                [Droplets, "Processo", "Tenha uma sequência clara do início ao acabamento."],
-                [Gauge, "Preço", "Aprenda a pensar em custo, tempo e valor percebido."],
-              ].map(([Icon, title, desc]) => (
-                <div key={String(title)} className="flex gap-4 rounded-2xl border border-white/10 bg-white/[.03] p-4">
+              {featureItems.map(({ icon: Icon, title, desc }) => (
+                <div key={title} className="flex gap-4 rounded-2xl border border-white/10 bg-white/[.03] p-4">
                   <div className="grid size-11 shrink-0 place-items-center rounded-xl bg-[#138cff]/10 text-[#36a7ff]">
                     <Icon className="size-5" />
                   </div>
                   <div>
-                    <h3 className="font-black">{String(title)}</h3>
-                    <p className="mt-1 text-sm text-white/50">{String(desc)}</p>
+                    <h3 className="font-black">{title}</h3>
+                    <p className="mt-1 text-sm text-white/50">{desc}</p>
                   </div>
                 </div>
               ))}
