@@ -21,34 +21,29 @@ export const Route = createFileRoute("/")({
 
 const showcase = [
   {
-    title: "Lavagem externa",
-    subtitle: "Processo correto, do pré-lavado ao acabamento",
-    image:
-      "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=900&q=85",
+    title: "Higienização interna",
+    subtitle: "Aprenda a limpar áreas internas com mais cuidado, acabamento e percepção de valor.",
+    image: "/lavajato/higienizacao-interna.webp",
   },
   {
-    title: "Rodas e pneus",
-    subtitle: "Detalhes que fazem o cliente perceber valor",
-    image:
-      "https://images.unsplash.com/photo-1600320254374-ce2d293c324e?auto=format&fit=crop&w=900&q=85",
+    title: "Geral detalhada",
+    subtitle: "Veja como fazer uma lavagem mais detalhada, com atenção aos pontos que mais chamam atenção no resultado final.",
+    image: "/lavajato/geral-detalhada.webp",
   },
   {
-    title: "Limpeza interna",
-    subtitle: "Acabamento limpo e organizado por etapas",
-    image:
-      "https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=900&q=85",
+    title: "Lavagem de motor",
+    subtitle: "Entenda os cuidados, a forma correta de aplicação e como executar o processo com mais segurança.",
+    image: "/lavajato/lavagem-motor.webp",
   },
   {
-    title: "Produtos e diluição",
-    subtitle: "O que usar, quanto usar e onde aplicar",
-    image:
-      "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=900&q=85",
+    title: "Vitrificação",
+    subtitle: "Conheça um serviço que agrega valor e melhora a apresentação e proteção do veículo.",
+    image: "/lavajato/vitrificacao.webp",
   },
   {
-    title: "Resultado final",
-    subtitle: "Entrega caprichada que ajuda a fidelizar",
-    image:
-      "https://images.unsplash.com/photo-1551830820-330a71b99659?auto=format&fit=crop&w=900&q=85",
+    title: "Produto e diluição",
+    subtitle: "Aprenda o que usar, como usar e como fazer a diluição correta para evitar desperdício.",
+    image: "/lavajato/produto-diluicao.webp",
   },
 ];
 
@@ -178,10 +173,10 @@ function Index() {
           <div>
             <p className="text-sm font-black uppercase tracking-[.18em] text-[#2aa3ff]">A diferença aparece no resultado</p>
             <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-5xl">
-              Não é só jogar água e sabão no carro.
+              O cliente percebe quando o serviço é bem feito.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-white/60">
-              Uma boa lavagem tem ordem, produto certo, diluição certa e atenção aos detalhes. São essas decisões que separam um serviço improvisado de uma entrega que passa confiança e faz o cliente querer voltar.
+              Uma lavagem bem executada não depende só de água e sabão. Ela envolve processo, escolha correta dos produtos, diluição, acabamento e atenção aos detalhes. É isso que transforma uma limpeza comum em um serviço que impressiona.
             </p>
             <div className="mt-8 space-y-4">
               {[
@@ -204,13 +199,13 @@ function Index() {
             <div className="absolute -inset-6 rounded-[2rem] bg-[#138cff]/10 blur-3xl" />
             <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[#0d141f] p-3 shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1200&q=90"
-                alt="Lavagem automotiva"
+                src="/lavajato/diferenca-resultado.webp"
+                alt="Resultado de uma lavagem geral detalhada"
                 className="aspect-[4/3] w-full rounded-[1.5rem] object-cover"
               />
               <div className="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/10 bg-black/55 p-4 backdrop-blur-md">
-                <p className="text-xs font-black uppercase tracking-[.15em] text-[#55b3ff]">Aula na prática</p>
-                <p className="mt-1 font-bold">Você vê o processo acontecendo, não apenas teoria.</p>
+                <p className="text-xs font-black uppercase tracking-[.15em] text-[#55b3ff]">Resultado na prática</p>
+                <p className="mt-1 font-bold">O treinamento mostra o passo a passo para chegar em um acabamento que chama atenção.</p>
               </div>
             </div>
           </div>
@@ -226,7 +221,7 @@ function Index() {
                 Veja os tipos de serviço que entram no treinamento.
               </h2>
               <p className="mt-4 text-white/55">
-                Essas imagens são temporárias. Depois substituímos pelas fotos e frames reais dos vídeos do Lavajato do Diogo.
+                Conheça alguns dos serviços e processos que você vai aprender ao longo do treinamento.
               </p>
             </div>
 
