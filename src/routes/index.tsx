@@ -14,8 +14,26 @@ import {
   Wrench,
 } from "lucide-react";
 import { useRef } from "react";
+import courseMockup from "@/assets/mockup-oficial-curso.png.asset.json";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Curso Lavajato do Diogo | Do básico ao profissional" },
+      {
+        name: "description",
+        content:
+          "Aprenda lavagem automotiva na prática: produtos, diluições, acabamento, precificação e como começar seu próprio lava-jato.",
+      },
+      { property: "og:title", content: "Curso Lavajato do Diogo" },
+      {
+        property: "og:description",
+        content: "Do básico ao profissional, com aulas práticas para transformar limpeza em oportunidade.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
@@ -124,7 +142,7 @@ function Index() {
 
               <div className="mt-8 max-w-2xl overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[.03] p-2 shadow-2xl">
                 <img
-                  src="/lavajato/mockup-curso.webp"
+                  src={courseMockup.url}
                   alt="Mockup do Curso Lavajato do Diogo"
                   className="w-full rounded-[1.35rem] object-cover"
                 />
@@ -392,7 +410,7 @@ function Index() {
             <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[#0b111a] p-3 shadow-2xl">
               <div className="absolute -inset-10 bg-[#138cff]/10 blur-3xl" />
               <img
-                src="/lavajato/mockup-curso.webp"
+                src={courseMockup.url}
                 alt="Mockup do Curso Lavajato do Diogo"
                 className="relative w-full rounded-[1.5rem] object-cover"
               />
