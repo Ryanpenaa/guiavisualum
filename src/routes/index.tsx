@@ -110,6 +110,7 @@ function Index() {
               <div>
                 <p className="text-sm font-black uppercase tracking-[.15em]">Lavajato</p>
                 <p className="-mt-1 text-lg font-black text-[#3ca8ff]">do Diogo</p>
+                <p className="mt-1 text-[11px] italic text-white/50">"Servindo Melhor, para servir sempre"</p>
               </div>
             </div>
 
