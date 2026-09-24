@@ -11,7 +11,6 @@ import {
   Star,
 } from "lucide-react";
 import { useRef } from "react";
-import courseMockup from "@/assets/mockup-oficial-curso.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -123,7 +122,7 @@ function Index() {
 
             <div className="mt-8 max-w-2xl overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[.03] p-2 shadow-2xl">
               <img
-                src={courseMockup.url}
+                src="/mockup-diogo-final.png"
                 alt="Mockup do Curso Lavajato do Diogo"
                 className="w-full rounded-[1.35rem] object-cover"
               />
