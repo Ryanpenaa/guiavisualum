@@ -122,7 +122,7 @@ function Index() {
 
             <div className="mt-8 max-w-2xl overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[.03] p-2 shadow-2xl">
               <img
-                src="/mockup-diogo-final.png"
+                src="https://raw.githubusercontent.com/Ryanpenaa/lovajatodiogo/main/public/mockup-diogo-final.png"
                 alt="Mockup do Curso Lavajato do Diogo"
                 className="w-full rounded-[1.35rem] object-cover"
               />
