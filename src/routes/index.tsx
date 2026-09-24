@@ -102,24 +102,8 @@ function Index() {
         </div>
 
         <div className="relative mx-auto max-w-7xl px-5 pb-16 pt-6 sm:px-8 lg:px-12">
-          <header className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="grid size-11 place-items-center rounded-2xl bg-[#138cff] shadow-[0_0_35px_rgba(19,140,255,.25)]">
-                <Droplets className="size-6" />
-              </div>
-              <div>
-                <p className="text-sm font-black uppercase tracking-[.15em]">Lavajato</p>
-                <p className="-mt-1 text-lg font-black text-[#3ca8ff]">do Diogo</p>
-                <p className="mt-1 text-[11px] italic text-white/50">"Servindo Melhor, para servir sempre"</p>
-              </div>
-            </div>
-
-            <a
-              href="#oferta"
-              className="hidden rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-bold backdrop-blur transition hover:bg-white/10 sm:inline-flex"
-            >
-              Ver treinamento
-            </a>
+          <header className="flex items-center">
+            <p className="text-sm italic text-white/60 sm:text-base">"Servindo Melhor, para servir sempre"</p>
           </header>
 
           <div className="max-w-3xl py-14 sm:py-20">
