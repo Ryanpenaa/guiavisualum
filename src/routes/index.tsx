@@ -293,6 +293,34 @@ function Index() {
         </div>
       </section>
 
+      <section className="border-t border-white/10 bg-[#0a1019] py-16 lg:py-20">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 sm:px-8 lg:grid-cols-[1.05fr_.95fr] lg:px-12">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[.18em] text-[#2aa3ff]">Certificado online</p>
+            <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-5xl">
+              Concluiu o treinamento? Emita seu certificado online.
+            </h2>
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-white/60 sm:text-lg">
+              Ao finalizar o curso, você poderá gerar seu certificado de conclusão de forma online, com seu nome e a data de emissão, para salvar no celular ou computador.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3 text-sm font-semibold text-white/70">
+              <span className="rounded-full border border-white/10 bg-white/[.04] px-4 py-2">100% online</span>
+              <span className="rounded-full border border-white/10 bg-white/[.04] px-4 py-2">Nome personalizado</span>
+              <span className="rounded-full border border-white/10 bg-white/[.04] px-4 py-2">Certificado de conclusão</span>
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[.03] p-3 shadow-2xl">
+            <img
+              src="/certificado-base.png"
+              alt="Modelo do certificado de conclusão do Curso Lavajato do Diogo"
+              className="w-full rounded-[1.25rem] object-contain"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
       <footer className="border-t border-white/10 bg-[#05080d] px-5 py-10 text-center text-sm text-white/35">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-3">
           <p className="font-bold text-white/60">Lavajato do Diogo</p>
