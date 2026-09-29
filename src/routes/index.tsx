@@ -283,7 +283,7 @@ function Index() {
             </div>
 
             <a
-              href="https://pay.cakto.com.br/yjs66gz_1132717"
+              href="https://pay.cakto.com.br/engra6s_1136817"
               className="mt-8 inline-flex min-h-16 w-full items-center justify-center gap-2 rounded-2xl bg-[#138cff] px-6 text-center text-base font-black shadow-[0_14px_40px_rgba(19,140,255,.22)] transition hover:-translate-y-0.5 hover:bg-[#2a9bff]"
             >
               QUERO ENTRAR PARA O TREINAMENTO
