@@ -112,8 +112,8 @@ function Index() {
             </div>
 
             <h1 className="max-w-4xl text-4xl font-black leading-[1.02] tracking-[-.04em] sm:text-6xl lg:text-7xl">
-              Aprenda a lavar carros do jeito certo e transforme isso em uma
-              <span className="text-[#229cff]"> habilidade que pode gerar renda.</span>
+              Aprenda lavagem automotiva do jeito certo —
+              <span className="text-[#229cff]"> do básico ao profissional.</span>
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/70 sm:text-xl">
