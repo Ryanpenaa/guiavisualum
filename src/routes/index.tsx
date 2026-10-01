@@ -297,9 +297,6 @@ function Index() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 sm:px-8 lg:grid-cols-[1.05fr_.95fr] lg:px-12">
           <div>
             <p className="text-sm font-black uppercase tracking-[.18em] text-[#2aa3ff]">Certificado online</p>
-            <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-5xl">
-              Concluiu o treinamento? Emita seu certificado online.
-            </h2>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-white/60 sm:text-lg">
               Ao finalizar o curso, você poderá gerar seu certificado de conclusão de forma online, com seu nome e a data de emissão, para salvar no celular ou computador.
             </p>
