@@ -77,6 +77,15 @@ const modules = [
   ["08", "Seu lava-jato", "Como começar pequeno e evoluir conforme os clientes aparecem."],
 ];
 
+const certificatePhotos = [
+  { src: "/c1.jpeg", alt: "Aluno com certificado do Lavajato do Diogo" },
+  { src: "/c2.jfif", alt: "Certificados compartilhados por alunos" },
+  { src: "/c3.jfif", alt: "Aluno mostrando certificado do treinamento" },
+  { src: "/c5.jpeg", alt: "Certificados de conclusão do Lavajato do Diogo" },
+  { src: "/c6.jfif", alt: "Certificado de conclusão compartilhado por aluno" },
+  { src: "/c7.jpeg", alt: "Aluno segurando certificado do Lavajato do Diogo" },
+];
+
 function Index() {
   const carousel = useRef<HTMLDivElement>(null);
 
@@ -293,27 +302,37 @@ function Index() {
         </div>
       </section>
 
-      <section className="border-t border-white/10 bg-[#0a1019] py-16 lg:py-20">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 sm:px-8 lg:grid-cols-[1.05fr_.95fr] lg:px-12">
-          <div>
-            <p className="text-sm font-black uppercase tracking-[.18em] text-[#2aa3ff]">Certificado online</p>
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-white/60 sm:text-lg">
-              Ao finalizar o curso, você poderá gerar seu certificado de conclusão de forma online, com seu nome e a data de emissão, para salvar no celular ou computador.
+      <section className="overflow-hidden border-t border-white/10 bg-[#0a1019] py-16 lg:py-20">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+          <div className="max-w-3xl">
+            <p className="text-sm font-black uppercase tracking-[.18em] text-[#2aa3ff]">Certificados</p>
+            <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-5xl">
+              Quem faz, mostra.
+            </h2>
+            <p className="mt-4 text-white/55">
+              Alguns certificados compartilhados por alunos que concluíram o treinamento.
             </p>
-            <div className="mt-6 flex flex-wrap gap-3 text-sm font-semibold text-white/70">
-              <span className="rounded-full border border-white/10 bg-white/[.04] px-4 py-2">100% online</span>
-              <span className="rounded-full border border-white/10 bg-white/[.04] px-4 py-2">Nome personalizado</span>
-              <span className="rounded-full border border-white/10 bg-white/[.04] px-4 py-2">Certificado de conclusão</span>
-            </div>
           </div>
+        </div>
 
-          <div className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[.03] p-3 shadow-2xl">
-            <img
-              src="/certificado-base.png"
-              alt="Modelo do certificado de conclusão do Curso Lavajato do Diogo"
-              className="w-full rounded-[1.25rem] object-contain"
-              loading="lazy"
-            />
+        <div className="relative mt-10">
+          <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-12 bg-gradient-to-r from-[#0a1019] to-transparent sm:w-24" />
+          <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-12 bg-gradient-to-l from-[#0a1019] to-transparent sm:w-24" />
+
+          <div className="certificate-marquee flex w-max gap-4 px-5 sm:gap-5 sm:px-8 lg:px-12">
+            {[...certificatePhotos, ...certificatePhotos].map((item, index) => (
+              <article
+                key={`${item.src}-${index}`}
+                className="w-[260px] shrink-0 overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[.035] shadow-2xl sm:w-[310px] lg:w-[350px]"
+              >
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="h-[390px] w-full object-cover sm:h-[450px] lg:h-[500px]"
+                  loading="lazy"
+                />
+              </article>
+            ))}
           </div>
         </div>
       </section>
