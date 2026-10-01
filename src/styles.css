@@ -142,3 +142,28 @@
     color: var(--color-foreground);
   }
 }
+
+
+@keyframes certificate-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 0.625rem));
+  }
+}
+
+.certificate-marquee {
+  animation: certificate-marquee 34s linear infinite;
+  will-change: transform;
+}
+
+.certificate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .certificate-marquee {
+    animation: none;
+  }
+}
