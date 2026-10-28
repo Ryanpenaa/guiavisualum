@@ -101,7 +101,9 @@ function Index() {
       <section className="relative isolate overflow-hidden border-b border-white/10">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1552930294-6b595f4c2974?auto=format&fit=crop&w=1800&q=90"
+            src="https://images.unsplash.com/photo-1552930294-6b595f4c2974?auto=format&fit=crop&w=900&q=65"
+            srcSet="https://images.unsplash.com/photo-1552930294-6b595f4c2974?auto=format&fit=crop&w=600&q=65 600w, https://images.unsplash.com/photo-1552930294-6b595f4c2974?auto=format&fit=crop&w=900&q=65 900w, https://images.unsplash.com/photo-1552930294-6b595f4c2974?auto=format&fit=crop&w=1400&q=70 1400w"
+            sizes="100vw"
             alt=""
             className="h-full w-full object-cover object-center opacity-30"
             loading="eager"
