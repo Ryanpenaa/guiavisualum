@@ -104,6 +104,11 @@ function Index() {
             src="https://images.unsplash.com/photo-1552930294-6b595f4c2974?auto=format&fit=crop&w=1800&q=90"
             alt=""
             className="h-full w-full object-cover object-center opacity-30"
+            loading="eager"
+            fetchPriority="low"
+            decoding="async"
+            width={1800}
+            height={1200}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#05080d] via-[#05080d]/95 to-[#05080d]/45" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#070b11] via-transparent to-black/20" />
@@ -131,7 +136,12 @@ function Index() {
 
             <div className="mt-8 max-w-2xl overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[.03] p-2 shadow-2xl">
               <img
-                src="https://raw.githubusercontent.com/Ryanpenaa/lovajatodiogo/main/public/mockup-diogo-final.png"
+                src="/mockup-diogo-final.webp"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                width={1200}
+                height={900}
                 alt="Mockup do Curso Lavajato do Diogo"
                 className="w-full rounded-[1.35rem] object-cover"
               />
@@ -191,6 +201,10 @@ function Index() {
                 <img
                   src={item.image}
                   alt={item.title}
+                  loading="lazy"
+                  decoding="async"
+                  width={640}
+                  height={800}
                   className="aspect-[4/5] w-full object-cover transition duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/5 to-transparent" />
@@ -329,6 +343,9 @@ function Index() {
                 <img
                   src={item.src}
                   alt={item.alt}
+                  width={350}
+                  height={500}
+                  decoding="async"
                   className="h-[390px] w-full object-cover sm:h-[450px] lg:h-[500px]"
                   loading="lazy"
                 />
